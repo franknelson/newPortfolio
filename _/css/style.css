@@ -1,0 +1,63 @@
+/* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.chromeframe {position: absolute; top: 0;}
+/*
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Droid Serif', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+/* style */
+html{font-family: 'Playfair Display', serif; transition:background-color 1.75s ease;}
+body{padding:0; width:90%; margin:5% auto 5% auto;}
+body div:nth-child(1){height:2em; width:100%;margin:0 auto;}
+body div:nth-child(1) div{float:left; height:2em; width:25%;background:rgba(255,255,255,0.5);}
+body div:nth-child(1) div:nth-child(2n){background:rgba(255,255,255,0.9);}
+div p{font-size:2em; padding:0 0 1em 0; color:rgba(255,255,255,0.7);}
+div p:nth-child(1) {font-size:1em;font-weight:bold;letter-spacing:0em;}
+div p:nth-child(2) {font-size:1.75em;}
+div p:nth-child(4) {font-size:1em;}
+nav{;position:fixed;bottom:0; left:0;width:100%;z-index:999;}
+nav ul li{display:inline;float:left;padding:0;margin:0;width:33.33%;}
+nav ul li a{display:inline-block;height:5em;width:100%;font-weight:bold; text-align:center;line-height:5em;text-decoration:none;color:rgba(255,255,255,0.8);font-size:1.5em;transition:color 1.75s ease;}
+nav ul li a:hover {background:rgba(255,255,255,0.9);}
+nav ul li:nth-child(1) {background:rgba(255,255,255,0.75);}
+nav ul li:nth-child(2) {background:rgba(255,255,255,0.55);}
+nav ul li:nth-child(3) {background:rgba(255,255,255,0.35);}
+
+div.tri{width: 0;height: 0;border-style: solid;border-width: 0 0 0 0;border-color: transparent transparent transparent rgb(172,172,172) ;position:fixed;top:0;right:0;z-index:-1;}
+.row{clear:both; overflow:hidden; margin:2% 0;}
+.row div:last-child{margin-right:0;}
+
+.col {margin-right: 2%; float:left; min-height:150px; background-color:rgba(50,50,50,0.5);padding:1.5%;}
+
+/*column definitions */
+.one{width:9.33333333333%;} /* 1/9 columns, 2%(16%) margin, 3%(27%) padding -- */
+.two{width:20.66666666667%;} /* 2/9 columns, 2%(16%) margin, 3%(27%) padding -- */
+.three{width:32%;} /* 3/9 columns, 2%(16%) margin, 3%(27%) padding -- */
+.four{width:43.33333333333%;} /* 4/9 columns, 2%(16%) margin, 3%(27%) padding -- */
+.five{width:54.6666666666667%;} /* 5/9 columns, 2%(16%) margin, 3%(27%) padding -- */
+.six{width:66%;} /* 6/9 columns, 2%(16%) margin, 3%(27%) padding -- */
+.seven{width:77.333333333%;} /* 7/9 columns, 2%(16%) margin, 3%(27%) padding -- */
+.eight{width:88.666666666667%;} /* 8/9 columns, 2%(16%) margin, 3%(27%) padding -- */
+.nine{width:100%;} /* 8/9 columns, 2%(16%) margin, 3%(27%) padding -- */
+
+
+
+
+/* Media queries
+
+@media screen and (max-width: 780px) {
+body{background: rgba(240, 240, 240, 1.0);}
+
+}
+
+@media screen and (max-width: 420px) {
+
+body{background: rgba(210, 210, 210, 1.0);}
+div p{font-size:32px; padding:0 0 1em 0;}
+
+}
+*/
